@@ -11,11 +11,11 @@
 <div class="content">      
     
       <div id="login">
-        <form method="post" action="conexao.php"> 
+        <form method="post" action=""> 
           <h1>Login</h1> 
           <p> 
             <label for="nome_login">Seu email: </label>
-            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+            <input id="nome_login" name="login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
           </p>
            
           <p> 

@@ -13,7 +13,7 @@
 
 <body>
 <div id="cadastro">
-        <form method="post" action="conexao.php"> 
+        <form method="post" action="inserir.php"> 
           <h1>Cadastro</h1> 
            
           <p> 
@@ -49,7 +49,7 @@
            
           <p> 
             <label for="senha">Sua senha</label>
-            <input id="senha" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+            <input id="senha" name="senha" required="required" type="password" placeholder="ex. 1234"/>
           </p>
            
           <p> 
