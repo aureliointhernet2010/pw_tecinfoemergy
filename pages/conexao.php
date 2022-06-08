@@ -12,11 +12,3 @@ try {
 return $conexao;
 ?>
 
-<?php
-if(isset($_POST['btn-cadastrar'])){
-  $usuario = $_POST['usuario'];
-  $senha = $_POST['senha'];
-
-  $sql = Mysql::conectar()->prepare
-}
-?>
