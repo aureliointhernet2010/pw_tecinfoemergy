@@ -13,7 +13,7 @@
 
 <body>
 <div id="cadastro">
-        <form method="post" action="inserir.php"> 
+        <form name="form1" method="post" action="../controle/inserir.php"> 
           <h1>Cadastro</h1> 
            
           <p> 
@@ -53,7 +53,7 @@
           </p>
            
           <p> 
-            <input type="submit" value="Cadastrar"/> 
+            <input type="submit" value="Cadastrar"> 
           </p>
            
           <p class="link">  

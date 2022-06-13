@@ -11,16 +11,16 @@
 <div class="content">      
     
       <div id="login">
-        <form method="post" action=""> 
+        <form method="post" action="../controle/login.php"> 
           <h1>Login</h1> 
           <p> 
-            <label for="nome_login">Seu email: </label>
-            <input id="nome_login" name="login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+            <label for="nome_login">Email: </label>
+            <input id="nome_login" name="email" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
           </p>
            
           <p> 
-            <label for="email_login">Seu nome: </label>
-            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+            <label for="email_login">Senha: </label>
+            <input id="email_login" name="senha" required="required" type="password" placeholder="ex. senha" /> 
           </p>
            
           <p> 
