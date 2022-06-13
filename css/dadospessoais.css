@@ -1,0 +1,10 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(90deg,rgb(35, 114, 71),rgb(189, 185, 185),rgb(57, 83, 139));
+}
+div table tr {
+   font-size: 30%;
+}
