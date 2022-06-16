@@ -8,7 +8,9 @@
     <title>LOGIN</title>
 </head>
 <body>
-<div class="content">      
+<div class="content">
+    
+         <!-- Formulário de login -->
     
       <div id="login">
         <form method="post" action="../controle/login.php"> 
@@ -32,10 +34,13 @@
             <input type="submit" value="Logar" /> 
           </p>
            
+             <!-- Ir para a página de cadastro -->
           <p class="link">
             Ainda não tem conta?
             <a href="cadastro.php">Cadastre-se</a>
+              
           </p>
+             <!-- Fim -->
         </form>
       </div>
 </body>
