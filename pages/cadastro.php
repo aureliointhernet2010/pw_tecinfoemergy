@@ -61,6 +61,8 @@
             Já tem conta?
             <a href="login.php"> Ir para Login </a>
           </p>
+            
+             <!-- Fim  -->
         </form>
       </div>
     </div>
