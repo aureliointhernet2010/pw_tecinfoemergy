@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- Parte responsável pelo formulário de cadastro -->
 <div id="cadastro">
         <form name="form1" method="post" action="../controle/inserir.php"> 
           <h1>Cadastro</h1> 
@@ -55,7 +56,7 @@
           <p> 
             <input type="submit" value="Cadastrar"> 
           </p>
-           
+           <!-- Ir para a página de login -->
           <p class="link">  
             Já tem conta?
             <a href="login.php"> Ir para Login </a>
