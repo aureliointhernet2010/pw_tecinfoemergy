@@ -1,18 +1,22 @@
 <?php
+//incio
+//Importação dos arquivos de conexao e pesquisa
 $pdo = require 'conexao.php';
 $pesquisa = require 'pesquisar.php';
 
+//Coletando informações inseridas pelos usáurios na tela de cadastro
 $nome = $_POST['nome'];
 $turma = $_POST['turma'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 $login = false;
 
+
 foreach ($pesquisa as $key => $valor) {
     if ($valor['email' == $email] && $valor['senha'] == $senha)
         $login = true;
 }
-
+//Se o usuário for cadastrado, poderá acessar o site
 if ($login == true) {
     header('location:../pages/areaAluno.php');
 } else {
@@ -29,7 +33,6 @@ if ($login == true) {
 
     header('location:../pages/areaAluno.php');
 }
+//Fim
 
-
-
-// echo $prepare;
+?>
