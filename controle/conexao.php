@@ -2,7 +2,7 @@
 
  //Conexão dos formulários com banco de dados
 
-//aqui há uma variavel sem valor
+//Aqui há uma variavel sem valor
 $conexao = null;
 
 //Fazendo a conexão com o banco
