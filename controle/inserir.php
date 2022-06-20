@@ -1,5 +1,5 @@
 <?php
-//incio
+//Início
 //Importação dos arquivos de conexao e pesquisa
 $pdo = require 'conexao.php';
 $pesquisa = require 'pesquisar.php';
