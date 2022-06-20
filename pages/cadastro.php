@@ -62,8 +62,9 @@
             <a href="login.php"> Ir para Login </a>
           </p>
             
-             <!-- Fim  -->
+          
         </form>
+       <!-- Aqui finaliza o formulário  -->
       </div>
     </div>
   </div>  
