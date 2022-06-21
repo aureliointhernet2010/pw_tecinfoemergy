@@ -17,7 +17,7 @@
     <div class="item-login">
       <img src="../img/livro.png" alt="imagem aqui" width="400px">
       <div class="botoes">
-        <a href="pages/login.php" style="background:grey;">LOGIN</a>
+        <a href="loginadm.php" style="background:grey;">LOGIN</a>
       </div>
     </div>
   </div>
