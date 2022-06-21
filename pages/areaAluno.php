@@ -4,9 +4,7 @@
 <head>
     <title>Bibloteca PBL</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/alunos.css" type="text/css">
-
-    <link rel="stylesheet" href="../fontawesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/aluno.css" type="text/css">
 
 
 </head>
@@ -45,7 +43,7 @@
 
 
             <div class="aside-menu-content">
-            <img src="https://cdn.pixabay.com/photo/2014/06/27/16/47/person-378368_960_720.png" width="100px" height="100px">
+         
                 <nav class="menu-nav">
                     <a class="menu-item" href="pages" style=" padding: 25px; background-color: rgba(47, 145, 121, 0.719);">
                         <i class="fa-solid fa-house">
@@ -80,18 +78,21 @@
             </div>
 </section>
             <!--fim do menu-->
-<section>
-            <!--Slideshow-->
+
+
+
+            <!--slideshow-->
     <main class="main">
+    
   <section class="slideshow">
     <div class="slide fade is-active">
       <span class="slide-number">1 / 3</span>
       <figure class="slide-image">
         <img
-          src="https://www.w3schools.com/howto/img_nature_wide.jpg"
+          src="https://2.bp.blogspot.com/-tcz3cPVg_6Q/V5vTIhwFT6I/AAAAAAAAXaI/FXVp49WmITgMHD3bTrBd3tA136fg3J1_ACLcB/s640/quando-acontece-algo-incrivel-livro-leitor-sentimentos-rea%25C3%25A7oes-mademoisellelovesbooks.gif"
           alt="Mountain"
         />
-        <figcaption>First image</figcaption>
+        <figcaption>Um bom livro desperta a felicidade</figcaption>
       </figure>
     </div>
 
@@ -99,10 +100,10 @@
       <span class="slide-number">2 / 3</span>
       <figure class="slide-image">
         <img
-          src="https://www.w3schools.com/howto/img_snow_wide.jpg"
-          alt="Snow"
+          src="../img/harrypotter.jpg"
+          alt="Snow" width="200px" height="400px"
         />
-        <figcaption>Second image</figcaption>
+        <figcaption>Harry Potter</figcaption>
       </figure>
     </div>
 
@@ -111,10 +112,10 @@
       <figure class="slide-image">
         <img
           class="slide2"
-          src="https://www.w3schools.com/howto/img_mountains_wide.jpg"
-          alt="Snow"
+          src="../img/aselecao.jpg"
+          alt="Snow" width="200px" height="400px" 
         />
-        <figcaption>Third image</figcaption>
+        <figcaption>A Seleção</figcaption>
       </figure>
     </div>
 
@@ -130,10 +131,11 @@
     </div>
   </section>
 </main>
-</section>
-    
-        
+<!-- fim do slideshow-->
 
+<!--rodapé-->
+
+    
             <footer class="footer-1">
 		<p class="footer__copyright"><b>SOBRE: </b>Este site é uma parceira com a Biblioteca da PBL
 </p>
@@ -150,7 +152,50 @@
             <a href="https://www.instagram.com/eppbloficial/">Acesse o instragram da escola<img src="http://www.stickpng.com/img/download/580b57fcd9996e24bc43c521/image" alt="" width="100px" height="100px"></a>
         </p>
 	</footer>
-           
+
+    <script>
+        const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const dots = Array.from(document.querySelectorAll(".dot"));
+
+let slideIndex = 1;
+
+function plusSlides(e) {
+  let num;
+
+  if (e.target === prevBtn) num = -1;
+  if (e.target === nextBtn) num = 1;
+
+  showSlides((slideIndex += num));
+}
+
+function currentSlide(e) {
+  if (e.target === dots[0]) showSlides((slideIndex = 1));
+  if (e.target === dots[1]) showSlides((slideIndex = 2));
+  if (e.target === dots[2]) showSlides((slideIndex = 3));
+}
+
+function showSlides(n) {
+  const slides = Array.from(document.querySelectorAll(".slide"));
+
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+
+  slides.forEach((slide) => slide.classList.remove("is-active"));
+  dots.forEach((dot) => dot.classList.remove("is-active"));
+
+  slides[slideIndex - 1].classList.add("is-active");
+  dots[slideIndex - 1].classList.add("is-active");
+}
+
+prevBtn.addEventListener("click", plusSlides);
+nextBtn.addEventListener("click", plusSlides);
+dots.forEach((dot) => dot.addEventListener("click", currentSlide));
+
+    </script>
+
+
+        
             
 </body>
 
