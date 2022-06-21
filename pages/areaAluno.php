@@ -4,7 +4,7 @@
 <head>
     <title>Bibloteca PBL</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/aluno.css" type="text/css">
+    <link rel="stylesheet" href="../css/alunos.css" type="text/css">
 
     <link rel="stylesheet" href="../fontawesome/css/all.min.css" type="text/css">
 
@@ -26,6 +26,9 @@
         </div>
         
     </div>
+
+    
+
 
 
     <!--menu-->
@@ -77,6 +80,57 @@
             </div>
 </section>
             <!--fim do menu-->
+<section>
+            <!--Slideshow-->
+    <main class="main">
+  <section class="slideshow">
+    <div class="slide fade is-active">
+      <span class="slide-number">1 / 3</span>
+      <figure class="slide-image">
+        <img
+          src="https://www.w3schools.com/howto/img_nature_wide.jpg"
+          alt="Mountain"
+        />
+        <figcaption>First image</figcaption>
+      </figure>
+    </div>
+
+    <div class="slide fade">
+      <span class="slide-number">2 / 3</span>
+      <figure class="slide-image">
+        <img
+          src="https://www.w3schools.com/howto/img_snow_wide.jpg"
+          alt="Snow"
+        />
+        <figcaption>Second image</figcaption>
+      </figure>
+    </div>
+
+    <div class="slide fade">
+      <span class="slide-number">3 / 3</span>
+      <figure class="slide-image">
+        <img
+          class="slide2"
+          src="https://www.w3schools.com/howto/img_mountains_wide.jpg"
+          alt="Snow"
+        />
+        <figcaption>Third image</figcaption>
+      </figure>
+    </div>
+
+    <div class="controls">
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+
+    <div class="dots-container">
+      <span class="dot is-active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+</main>
+</section>
     
         
 
